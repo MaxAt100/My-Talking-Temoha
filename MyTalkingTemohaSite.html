@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>НЕ НАЖИМАЙ НА АРБУЗ!!!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        button img {
+            width: 400px;
+            height: 400px;
+        }
+        #hiddenText {
+            display: none;
+            font-family: 'Edu VIC WA NT Beginner', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <button id="imageButton" onclick="handleClick()">
+        <img src="https://raw.githubusercontent.com/MaxAt100/My-Talking-Temoha/main/thumb.webp" alt="НЕ НАЖИМАЙ!!!"> 
+        </button>
+    <p id="hiddenText">https://raw.githubusercontent.com/MaxAt100/My-Talking-Temoha/main/kkkkkkkkkkk</p> <h1>ВЫ НЕ ИМЕЕТЕ ДОСТАТОЧНО ПРАВ, ДЛЯ ПОСЕЩЕНИЯ ЭТОГО САЙТА, ВЫЙДИ!</h1>
+
+    <script>
+        let clickCount = 0;
+
+        function handleClick() {
+            clickCount++;
+            if (clickCount === 5) {
+                document.getElementById('hiddenText').style.display = 'block'; 
+            } 
+        }
+    </script>
+</body>
+</html> 

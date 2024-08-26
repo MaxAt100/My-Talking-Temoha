@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>НЕ НАЖИМАЙ НА АРБУЗ!!!</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap">
     <style>
@@ -17,8 +19,8 @@
             cursor: pointer;
         }
         button img {
-            width: 400px;
-            height: 400px;
+            width: 100px;
+            height: 100px;
         }
         #hiddenText {
             display: none;
@@ -29,8 +31,9 @@
 <body>
     <button id="imageButton" onclick="handleClick()">
         <img src="https://raw.githubusercontent.com/MaxAt100/My-Talking-Temoha/main/thumb.webp" alt="НЕ НАЖИМАЙ!!!"> 
-        </button>
-    <p id="hiddenText">https://raw.githubusercontent.com/MaxAt100/My-Talking-Temoha/main/kkkkkkkkkkk</p> <h1>ВЫ НЕ ИМЕЕТЕ ДОСТАТОЧНО ПРАВ, ДЛЯ ПОСЕЩЕНИЯ ЭТОГО САЙТА, ВЫЙДИ!</h1>
+    </button>
+    <p id="hiddenText">https://raw.githubusercontent.com/MaxAt100/My-Talking-Temoha/main/kkkkkkkkkkk</p> 
+    <h1>ВЫ НЕ ИМЕЕТЕ ДОСТАТОЧНО ПРАВ, ДЛЯ ПОСЕЩЕНИЯ ЭТОГО САЙТА, ВЫЙДИ!</h1>
 
     <script>
         let clickCount = 0;
@@ -38,9 +41,9 @@
         function handleClick() {
             clickCount++;
             if (clickCount === 5) {
-                document.getElementById('hiddenText').style.display = 'block'; 
+                window.location.href = 'https://maxat100.github.io/My-Talking-Temoha/bbbbbbbbbbutton.html';
             } 
         }
     </script>
 </body>
-</html> 
+</html>

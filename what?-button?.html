@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кнопка? Что за фигня?</title>
+</head>
+<body>
+
+<button onclick="redirectToAnotherSite()">Нажми на меня!</button>
+
+<script>
+function redirectToAnotherSite() {
+    const randomChance = Math.floor(Math.random() * 100) + 1;
+
+    if (randomChance <= 3) {
+        window.location.href = 'https://maxat100.github.io/My-Talking-Temoha/site_dont_working.html';
+    } else {
+        alert('Не повезло! Попробуй ещё раз. П̴̡̰̥̞̼̲̾͗̉̈́̽͗̿͂͊̏͆̔̅О̵̞̣̼̙̞͇̦̊͒̃́̀̚͝П̴̡̲̱̮͎̰̱̮͈̠͓͈̜̭́̍̀Р̶̨̪̱̥̫̯̝͙̝͑̃͐̕͜О̴̨̦̻̘͉͙̐̀͒̔̾͒͂̓͊͋̀͝Б̶̡͈̖̪͎̹͈͙̘̑̐͐У̵̥̞͓̙͇͙̟͓͇͚͓̒͂́́̊̀̾͑̀̑̔̚͝Й̵̛͔̞̰͈̻͙̻̖͙͐̎̔̓̓̎͐̋̃̃̕͝͝!̵̨̯̣̯̲̱̻͖̫̖͖̟̽͐̂͒͋̽̎͝͠͠');
+    }
+}
+</script>
+
+</body>
+</html>
